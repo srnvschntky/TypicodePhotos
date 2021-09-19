@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottom_dialogue"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/deleteView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="1dp"
+            android:background="@color/white"
+            android:text="@string/delete"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+            />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/deleteTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/deleteView"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="1dp"
+            android:background="@color/white"
+            android:text="@string/are_you_sure_wanna_delete"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="italic"
+
+
+            />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/deleteIdTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/deleteTxtView"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="1dp"
+            android:background="@color/white"
+            android:text="@string/id"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+
+            />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/deleteImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/deleteIdTxtView"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="1dp"
+            android:foregroundGravity="center_horizontal"
+            android:src="@drawable/ic_delete" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/deleteLinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/deleteImageView"
+            android:layout_alignStart="@id/deleteImageView"
+            android:layout_alignEnd="@id/deleteImageView"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/noButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="@string/no"
+
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/yesButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="@string/yes"
+
+
+                />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </RelativeLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

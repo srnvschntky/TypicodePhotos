@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TypicodePhotos</string>
+    <string name="textview">TextView</string>
+    <string name="delete">Delete</string>
+    <string name="are_you_sure_wanna_delete">Are you sure wanna Delete ?</string>
+    <string name="no">No</string>
+    <string name="yes">YES</string>
+    <string name="id">Id: </string>
+</resources>
